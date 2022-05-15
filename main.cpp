@@ -56,6 +56,7 @@ void addEntry()
 		cout << "Please enter a valid input.\n\n";
 		addEntry();
 	}
+	return;
 }
 
 void editEntry()
@@ -109,6 +110,7 @@ void editEntry()
 					system("cls");
 					editEntry();
 				}
+				return;
 			}
 
 			if (fieldToEdit == "Age" || fieldToEdit == "age");
@@ -126,6 +128,7 @@ void editEntry()
 					system("cls");
 					editEntry();
 				}
+				return;
 			}
 
 			if (fieldToEdit == "Address" || fieldToEdit == "address")
@@ -143,6 +146,7 @@ void editEntry()
 					system("cls");
 					editEntry();
 				}
+				return;
 			}
 		}
 	}
@@ -195,6 +199,7 @@ void removeEntry()
 		cout << "Please enter a valid input.\n\n";
 		removeEntry();
 	}
+	return;
 }
 
 void showList()
@@ -228,6 +233,7 @@ void showList()
 		cout << "Please enter a valid input.\n\n";
 		showList();
 	}
+	return;
 }
 
 bool isStringANumber(string str)
